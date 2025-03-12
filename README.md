@@ -36,14 +36,23 @@ A Raspberry Pi-based conversational AI that uses OpenAI's ChatGPT and ElevenLabs
   - `mpg123` for audio playback
 
 - **Python Libraries:**
-  - `openai`
+  - `openai==0.28`
   - `requests`
   - `speech_recognition`
   - `pyaudio`
+  - `vosk`
   - `elevenlabs`
+  - `sounddevice`
   - `python-dotenv`
   - `logging`
-  - and others (see `requirements.txt` if available)
+
+- **Or install the libraries manually:**
+   ```bash
+   pip3 install openai requests speechrecognition pyaudio vosk elevenlabs sounddevice python-dotenv 
+
+- **Don't forget to:**
+   ```bash
+   sudo apt install portaudio19-dev -y alsa-utils libasound2 alsa-oss -y flac mpg321 vlc -y --upgrade pip setuptools wheel
 
 ## Installation
 
