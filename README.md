@@ -29,10 +29,12 @@ A Raspberry Pi-based conversational AI that uses OpenAI's ChatGPT and ElevenLabs
   - Raspberry Pi
   - USB Microphone
   - Speakers or headphones
+
 - **Software:**
   - Python 3.x
   - Git
   - `mpg123` for audio playback
+
 - **Python Libraries:**
   - `openai`
   - `requests`
@@ -58,7 +60,6 @@ A Raspberry Pi-based conversational AI that uses OpenAI's ChatGPT and ElevenLabs
    OPENAI_API_KEY=your_openai_api_key
    
 2. **Voice Settings:**
-
 - The project uses preset voices (VOICE_NIKKI) and (VOICE_TOM). 
 - You can change these in the source code if needed.
 
