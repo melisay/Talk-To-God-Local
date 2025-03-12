@@ -142,7 +142,11 @@ if not OPENAI_API_KEY:
     raise ValueError("Missing OPENAI_API_KEY environment variable.")
 
 # ElevenLabs TTS settings
-client = elevenlabs.ElevenLabs(api_key=ELEVENLABS_API_KEY)
+client = elevenlabs.ElevenLabs(
+    api_key=ELEVENLABS_API_KEY,
+    environment=elevenlabs.ElevenLabsEnvironment.PRODUCTION_US
+)
+
 VOICE_NIKKI = "Insert your Voice ID Here"
 VOICE_TOM = "Insert another Voice ID Here"
 current_voice = VOICE_NIKKI
